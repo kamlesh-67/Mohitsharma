@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Senior Process Associate | Capital Markets & BPM Expert</title>
+    <meta name="description"
+        content="Senior Process Associate at Infosys specializing in Capital Markets & BPM Services. Expert in international banking, consumer fulfillment, and process automation.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #4cc9f0;
+            --primary-dark: #0077b6;
+            --text-primary: #2d3748;
+            --text-secondary: #4a5568;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --text-primary: #f7fafc;
+            --text-secondary: #e2e8f0;
+            --bg-primary: #1a202c;
+            --bg-secondary: #2d3748;
+            --card-bg: #2d3748;
+            --border-color: #4a5568;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            transition: all 0.3s ease;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] .header {
+            background: rgba(26, 32, 44, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-secondary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            padding: 2rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Expertise Section */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .expertise-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .expertise-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .expertise-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .expertise-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            padding: 0.25rem 0;
+            color: var(--text-secondary);
+        }
+
+        .skills-list li::before {
+            content: '✓';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .cert-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: scale(1.05);
+        }
+
+        .cert-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cert-card h4 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .cert-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            padding: 1.5rem;
+            color: white;
+        }
+
+        .project-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-secondary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            width: 20px;
+        }
+
+        .contact-form {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 4rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">[Your Name]</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">[Your Name]</h1>
+            <p class="hero-subtitle">Senior Process Associate at Infosys</p>
+            <p class="hero-description">
+                Specializing in Capital Markets & BPM Services with 1.5 years of expertise in international banking,
+                process automation, and client advisory services. Committed to delivering excellence with integrity
+                and professionalism.
+            </p>
+            <div class="cta-buttons">
+                <a href="#expertise" class="btn btn-primary">
+                    <i class="fas fa-chart-line"></i>
+                    Explore My Expertise
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+            Driven by integrity and excellence in capital markets and BPM services
+        </p>
+
+        <div class="about-grid">
+            <div class="about-content fade-in">
+                <h3>Professional Journey</h3>
+                <p>
+                    With a strong foundation in BCA and programming expertise in Java and Python, I've evolved
+                    into a specialized Senior Process Associate at Infosys. My 1.5 years in the BPM sector
+                    have been focused on international banking and capital markets, where I've developed
+                    deep expertise in process optimization and client service excellence.
+                </p>
+
+                <h3>Core Philosophy</h3>
+                <p>
+                    My approach is built on four fundamental pillars: <strong>integrity, professionalism,
+                        strong work ethics, and unwavering responsibility</strong>. These values guide every
+                    client interaction and process improvement initiative I undertake.
+                </p>
+
+                <h3>Technical Excellence</h3>
+                <p>
+                    Combining technical skills in Java and Python with specialized knowledge in BPM tools
+                    and process automation, I bridge the gap between technology and business processes
+                    to deliver measurable results.
+                </p>
+            </div>
+
+            <div class="stats-grid fade-in">
+                <div class="stat-card">
+                    <div class="stat-number">1.5+</div>
+                    <div class="stat-label">Years in BPM</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Professional Certifications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Programming Languages</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction Focus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section">
+        <h2 class="section-title">Expertise & Services</h2>
+        <p class="section-subtitle">
+            Comprehensive BPM and capital markets solutions with technical excellence
+        </p>
+
+        <div class="expertise-grid">
+            <div class="expertise-card fade-in">
+                <div class="expertise-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Capital Markets Services</h3>
+                <p>
+                    Specialized expertise in account maintenance and client advisory services with
+                    unwavering focus on integrity and regulatory compliance.
+                </p>
+                <ul class="skills-list">
+                    <li>Client account maintenance</li>
+                    <li>Advisory support services</li>
+                    <li>Regulatory compliance</li>
+                    <li>Risk assessment</li>
+                </ul>
+            </div>
+
+            <div class="expertise-card fade-in">
+                <div class="expertise-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>BPM Process Excellence</h3>
+                <p>
+                    End-to-end business process management across consumer fulfillment, mortgages,
+                    and loan drawdown operations.
+                </p>
+                <ul class="skills-list">
+                    <li>Consumer fulfillment processes</li>
+                    <li>Mortgage processing</li>
+                    <li>Loan drawdown operations</li>
+                    <li>Process optimization</li>
+                </ul>
+            </div>
+
+            <div class="expertise-card fade-in">
+                <div class="expertise-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Technical Skills</h3>
+                <p>
+                    Strong programming foundation complementing process expertise for automation
+                    and system integration solutions.
+                </p>
+                <ul class="skills-list">
+                    <li>Java programming</li>
+                    <li>Python development</li>
+                    <li>BPM tools proficiency</li>
+                    <li>Process automation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <h2 class="section-title">Professional Certifications</h2>
+        <p class="section-subtitle">
+            Continuously advancing expertise through industry-recognized certifications
+        </p>
+
+        <div class="certifications-grid">
+            <div class="cert-card fade-in">
+                <div class="cert-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>Capital Market Certification</h4>
+                <p>Advanced expertise in capital markets operations and regulations</p>
+            </div>
+
+            <div class="cert-card fade-in">
+                <div class="cert-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4>Consumer Fulfillment Certification</h4>
+                <p>Specialized knowledge in consumer service processes and fulfillment</p>
+            </div>
+
+            <div class="cert-card fade-in">
+                <div class="cert-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h4>Lending Services Certification</h4>
+                <p>Comprehensive understanding of lending processes and regulations</p>
+            </div>
+
+            <div class="cert-card fade-in">
+                <div class="cert-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Compliance Certification</h4>
+                <p>Expert knowledge in regulatory compliance and risk management</p>
+            </div>
+
+            <div class="cert-card fade-in">
+                <div class="cert-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h4>Enterprise Risk Management</h4>
+                <p>Advanced risk assessment and mitigation strategies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects & Experience</h2>
+        <p class="section-subtitle">
+            Delivering measurable results in international banking and capital markets
+        </p>
+
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>International Banking Process Optimization</h3>
+                    <p>Capital Markets Division</p>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Led process improvement initiatives for international banking operations,
+                        resulting in enhanced efficiency and client satisfaction across multiple accounts.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Process Optimization</span>
+                        <span class="tag">International Banking</span>
+                        <span class="tag">Client Advisory</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>BPM Automation Implementation</h3>
+                    <p>Consumer Fulfillment Systems</p>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Implemented automated solutions for consumer fulfillment processes,
+                        reducing processing time and improving accuracy through technical innovation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Process Automation</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Consumer Fulfillment</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>Mortgage Processing Excellence</h3>
+                    <p>Lending Services Division</p>
+                </div>
+                <div class="project-content">
+                    <p>
+                        Streamlined mortgage processing workflows and loan drawdown operations,
+                        ensuring compliance while maintaining service quality standards.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Mortgage Processing</span>
+                        <span class="tag">Compliance</span>
+                        <span class="tag">Risk Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+            Available for BPM opportunities, capital markets projects, and process improvement initiatives
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-info fade-in">
+                <h3>Get In Touch</h3>
+                <p>
+                    Ready to discuss BPM opportunities, capital markets projects, or process improvements?
+                    I'm available for collaborations across Jaipur, pan-India, and international markets.
+                </p>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jaipur, Rajasthan, India (Global Availability)</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-language"></i>
+                    <span>English (Excellent), Hindi (Native)</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Open to: Full-time, Contract, Consulting</span>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-linkedin"></i>
+                    <span>Connect on LinkedIn</span>
+                </div>
+            </div>
+
+            <form class="contact-form fade-in">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" class="form-control" required>
+                        <option value="">Select a topic</option>
+                        <option value="bpm">BPM Opportunities</option>
+                        <option value="capital-markets">Capital Markets Projects</option>
+                        <option value="process-improvement">Process Improvements</option>
+                        <option value="consulting">Consulting Services</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control"
+                        placeholder="Tell me about your project or opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+91xxxxxxxxxx" class="social-link" title="Phone">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 [Your Name]. Senior Process Associate specializing in Capital Markets & BPM Services.</p>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle i');
+
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggle.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedTheme = localStorage.getItem('theme');
+            const themeToggle = document.querySelector('.theme-toggle i');
+
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                themeToggle.className = 'fas fa-sun';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        function fadeInOnScroll() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = document.body.getAttribute('data-theme') === 'dark'
+                    ? 'rgba(26, 32, 44, 0.98)'
+                    : 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = document.body.getAttribute('data-theme') === 'dark'
+                    ? 'rgba(26, 32, 44, 0.95)'
+                    : 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+
+            // Here you would typically send the data to your server
+            // For now, we'll show a success message
+            alert(`Thank you, ${name}! Your message has been received. I'll get back to you soon.`);
+
+            // Reset form
+            this.reset();
+        });
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionHeight = section.offsetHeight;
+
+                if (sectionTop <= 150 && sectionTop + sectionHeight > 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
